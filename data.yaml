@@ -1,0 +1,14 @@
+path: /Users/rahul/FabricIRIS/textile_defect_detection/data/Fabric-Defect.v4i.yolov11
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['Kusut', 'Lubang', 'Noda']
+
+roboflow:
+  workspace: fabricdefects
+  project: fabric-defect-lk8nb
+  version: 4
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/fabricdefects/fabric-defect-lk8nb/dataset/4

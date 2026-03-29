@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+venv/
+miniforge3/
+
+# AI Specific (DO NOT PUSH DATA)
+data/
+runs/
+*.pt
+*.mlpackage
+.DS_Store
