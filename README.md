@@ -1,2 +1,15 @@
-# FabricIRIS-Textile-Defect
-An Edge-AI solution built for textile manufacturing. Uses YOLOv11 and Core ML to detect holes, stains, and oil spots in real-time. Optimized specifically for Apple Silicon (M1/M2/M3) to leverage the Neural Engine for high-speed, low-latency industrial quality control.
+# FabricIRIS: Textile Defect Detection
+
+An Edge-AI solution running on Apple Silicon (M1) to detect manufacturing defects in real-time.
+
+## Features
+- Detects Holes, Knots, Lines, and Stains.
+- Optimized for **Apple Neural Engine** using Core ML.
+- High-speed inference on MacBook Air M1.
+
+## Setup
+1. Install dependencies: `pip install ultralytics coremltools opencv-python`
+2. Train the model: `python train.py`
+3. Export to Core ML: `python export_model.py`
+4. Run live: `python detect_live.py`
+5. Snap & Analyse: `python detect_snap.py`
