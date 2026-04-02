@@ -189,8 +189,13 @@ def main():
 
         cv2.imshow("FabricIRIS - Textile Inspection", frame)
 
-        if cv2.waitKey(1) & 0xFF == ord("q"):
-            break
+        if defect_count > 0:
+            print("Defect detected! Video paused. Press 'q' to quit or any other key to resume.")
+            if cv2.waitKey(0) & 0xFF == ord("q"):
+                break
+        else:
+            if cv2.waitKey(1) & 0xFF == ord("q"):
+                break
 
     cap.release()
     cv2.destroyAllWindows()
